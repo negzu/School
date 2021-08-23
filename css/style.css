@@ -1,0 +1,701 @@
+* {
+  box-sizing: 0;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h2 {
+  font-weight: 700 !important;
+  font-size: 50px !important;
+  margin-bottom: 30px !important;
+  color: #f3b20c;
+}
+
+h2:hover {
+  animation: shake 0.8s;
+  animation-iteration-count: infinite;
+}
+
+section {
+  padding-left: 5% !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*--------------------------------*/
+/*             HOME              */
+/*------------------------------*/
+.row {
+  padding: 0% 3%;
+}
+
+.element::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.stickyHeader {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+
+header {
+  position: relative;
+}
+
+.topbar {
+  background-color: #f3b20c;
+}
+
+.topnav {
+  margin: auto;
+  margin-right: -3%;
+}
+
+.topnav li {
+  display: inline;
+  vertical-align: middle;
+}
+
+.topnav li a {
+  color: #2f2667;
+  text-transform: uppercase;
+  float: right;
+  padding: 0.8% 2%;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.topnav li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.col-sm-6 {
+  margin: auto !important;
+}
+
+.logo {
+  position: absolute;
+  right: 45%;
+  top: 5%;
+}
+
+.logo img {
+  height: 100px;
+  transition: 0.5s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.2);
+}
+
+.midbar {
+  background-color: #2f2667;
+  color: white;
+  padding: 1.5% 3%;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 23px;
+  font-family: cursive;
+  margin: auto;
+}
+
+.midbar ul {
+  display: flex !important;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: auto;
+}
+
+.midbar li {
+  display: inline;
+  vertical-align: middle;
+}
+
+.midbar li a {
+  font-family: poppins;
+  font-size: 16px;
+  padding: none;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  color: white;
+}
+
+.midbar li a .socialicons {
+  height: 25px;
+  margin: auto 5px;
+  transition: 0.2s ease;
+}
+
+.midbar li a .socialicons:hover {
+  transform: scale(0.8);
+}
+
+.midbar li a:hover {
+  color: #f3b20c;
+}
+
+.nav-container {
+  text-align: center;
+  height: 40px;
+  background-color: white;
+}
+
+.nav-container p {
+  margin: auto;
+  display: inline;
+  align-content: center;
+  white-space: nowrap;
+}
+
+.nav-container p a {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0.3% 6% 0.5%;
+  margin-top: 0;
+  transition: 0.3s ease;
+  display: inline-flex;
+}
+
+.nav-container p a:hover {
+  background-color: #f3b20c;
+  color: black;
+}
+
+.hero {
+  background-color: #1f6171;
+  background-size: contain;
+  background-position: center;
+  margin-top: 160px !important;
+}
+
+.hero img {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  margin-left: -7%;
+  filter: grayscale(0.5) contrast(0.8) saturate(0.5);
+  transition: 1s ease;
+}
+
+.hero img:hover {
+  filter: contrast(0.8) saturate(1.3);
+}
+
+.hero p {
+  color: white;
+  font-size: 20px;
+  line-height: 2.5em;
+}
+
+.hero h2 {
+  color: #f3b20c;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.about {
+  padding: 7% 3%;
+  background: linear-gradient(90deg, white, rgba(255, 255, 255, 0.8)), url(/media/bg.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.about p {
+  width: 90%;
+  margin: auto !important;
+  font-size: 18px;
+  line-height: 2.5em;
+}
+
+.about .sub {
+  font-size: 30px;
+  line-height: 1.8em;
+}
+
+.about .imgright {
+  position: absolute;
+  right: -15px;
+  top: -120px;
+  width: 400px;
+  transform: scale(0.9) rotate(10deg);
+  transition: 0.6s ease;
+}
+
+.about .imgright:hover {
+  transform: scale(1) rotate(10deg);
+}
+
+.about .imgleft {
+  position: absolute;
+  right: 120px;
+  width: 330px;
+  bottom: 90px;
+  transition: 0.6s ease;
+}
+
+.about .imgleft:hover {
+  transform: scale(0.9);
+}
+
+.about span {
+  bottom: 30px;
+  color: #2f2667;
+  width: 350px;
+  position: absolute;
+  right: 120px;
+  width: 330px;
+  transition: 0.6s ease;
+}
+
+.about span b {
+  color: #f36621;
+  font-size: 25px;
+}
+
+.about span b:hover {
+  transform: none !important;
+}
+
+.about button {
+  background-color: #2f2667;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  transform: scale(0.85);
+}
+
+.about button:hover {
+  background-color: #db8617;
+  transform: scale(0.7);
+}
+
+.enrollnow {
+  background: linear-gradient(30deg, #080231, #423886);
+  padding: 7% 3%;
+}
+
+.enrollnow img {
+  width: 100%;
+  height: auto;
+}
+
+.enrollnow h2 {
+  color: #f3b20c;
+  text-shadow: 5px 0 5px 0px black;
+}
+
+.enrollnow p {
+  color: white;
+  font-size: 18px;
+}
+
+.enrollnow button {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  transition: 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  border: 2px solid white;
+  transform: scale(0.85);
+}
+
+.enrollnow button:hover {
+  background-color: #f89a20;
+  transform: scale(0.7);
+  border: 2px solid #f89a20;
+}
+
+.enrollnow button a {
+  color: white;
+}
+
+.updates {
+  padding: 7% 3% 10%;
+  background: linear-gradient(90deg, white, rgba(255, 255, 255, 0.8)), url(/media/bg.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.updates h2 {
+  color: #f3b20c;
+  text-align: left;
+  margin: auto;
+}
+
+.updates p {
+  font-size: 18px;
+  line-height: 2.5em;
+  width: 90%;
+  text-align: left;
+}
+
+.updates p .updates-date {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.updates p a {
+  color: #333;
+}
+
+.updates p a:hover {
+  border-bottom: 1px solid #333;
+  color: #2f2667;
+}
+
+.updates .sub {
+  font-size: 30px;
+  line-height: 1.8em;
+}
+
+.updates .imgright {
+  position: absolute;
+  right: -15px;
+  top: -120px;
+  width: 400px;
+  transform: scale(0.9) rotate(10deg);
+  transition: 0.6s ease;
+}
+
+.updates .imgright:hover {
+  transform: scale(1) rotate(10deg);
+}
+
+.updates button {
+  background-color: #2f2667;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  transform: scale(0.85) translateX(-10%);
+}
+
+.updates button:hover {
+  background-color: #db8617;
+  transform: scale(0.7) translateX(-15%);
+}
+
+.updates .imgleft {
+  position: absolute;
+  right: 100px;
+  width: 600px;
+  bottom: 100px;
+  transform: rotate(-5deg);
+  transition: 0.6s ease;
+}
+
+.updates .imgleft:hover {
+  transform: rotate(-5deg) scale(0.9);
+}
+
+.map {
+  margin: auto auto -6px;
+}
+
+footer {
+  background-color: #2f2667;
+  padding: 1% 2% !important;
+  color: #e7e7e7;
+  font-size: 14px;
+  line-height: 2.2em;
+}
+
+footer b {
+  color: #f3b20c !important;
+}
+
+/*-------------------------------*/
+/*            About             */
+/*-----------------------------*/
+.about-hero {
+  margin-top: 160px;
+  background-image: url(/media/about-hero.jpg);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+.about-faculty {
+  padding: 10% 0 0;
+  margin-bottom: -80px;
+}
+
+/*-------------------------------*/
+/*       Programs Offered       */
+/*-----------------------------*/
+.programs-hero {
+  margin-top: 160px;
+  background: linear-gradient(0deg, rgba(8, 1, 39, 0.452), rgba(255, 177, 8, 0)), url(/media/programs-hero.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+
+.programs-hero img {
+  height: 550px;
+  width: 100%;
+}
+
+.programs {
+  margin: 0;
+  padding: 7% 3%;
+  background: linear-gradient(90deg, white, rgba(255, 255, 255, 0.8)), url(/media/bg.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.programs .po-imgright {
+  position: absolute;
+  height: 55%;
+  right: -20px;
+  transform: rotate(5deg);
+  bottom: -50px;
+  transition: 0.3s ease;
+}
+
+.programs .po-imgright:hover {
+  transform: rotate(5deg) scale(0.9);
+}
+
+.programs .po-imgleft {
+  position: absolute;
+  height: 65%;
+  left: 0px;
+  transform: rotate(-5deg);
+  top: -150px;
+  transition: 0.3s ease;
+}
+
+.programs .po-imgleft:hover {
+  transform: rotate(-5deg) scale(0.9);
+}
+
+.offers {
+  padding: 0;
+  margin: 0;
+  color: white;
+  line-height: 2em;
+  font-size: 22px;
+}
+
+.offers h3 {
+  color: #f3b20c;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.offers h3:hover {
+  animation: shake 0.8s;
+  animation-iteration-count: infinite;
+}
+
+.offers .acad {
+  background: linear-gradient(0deg, rgba(103, 132, 211, 0.9), rgba(103, 132, 211, 0.9)), url(/media/acad.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 7% 3%;
+  height: 500px;
+  padding: 4% 8% 3%;
+  margin: auto;
+}
+
+.offers .acad h3 {
+  text-shadow: 1px 1px 3px #2f2667;
+}
+
+.offers .acad img {
+  width: 83px;
+  height: 83px;
+  margin-bottom: 30px;
+}
+
+.offers .acad ul {
+  text-align: left;
+}
+
+.offers .tech {
+  background: linear-gradient(0deg, rgba(2, 35, 128, 0.9), rgba(2, 35, 128, 0.9)), url(/media/tech.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 7% 3%;
+  height: 500px;
+  padding: 4% 8% 3%;
+  margin: auto;
+}
+
+.offers .tech img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+.offers .tech ul {
+  text-align: left;
+}
+
+/*-------------------------------*/
+/*           Gallery            */
+/*-----------------------------*/
+.gallery-hero {
+  background-image: url(/media/gallery-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  margin-top: 160px;
+}
+
+.gallerycontainer {
+  background: linear-gradient(30deg, #080231, #423886);
+  padding: 7% 3%;
+  margin: auto;
+}
+
+.gallerycontainer h2 {
+  color: #f3b20c;
+  text-align: center;
+}
+
+.gallerybody {
+  padding: 9% 3%;
+  margin-top: 100px;
+  border-radius: 20px 150px 20px 150px;
+}
+
+.galleryboxtitle {
+  font-size: 19px;
+  font-weight: bold;
+  font-family: poppins;
+  text-transform: uppercase;
+  padding: 0 0 5%;
+  color: #2f2667;
+  letter-spacing: 0.03em;
+}
+
+.gallerycontainer .gallerybody {
+  display: grid;
+  grid-column: 2/3;
+  grid-template-columns: repeat(4, 1fr);
+  background: #FFDFAF;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.gallerycontainer .gallerytitle {
+  text-align: center;
+  padding: 50px;
+  margin-top: 60px;
+  grid-column: 1/ span 4;
+  color: #f3b20c;
+}
+
+.gallerycontainer .gallerybox {
+  padding: 0 6px;
+  display: grid;
+  margin: 10px 10px 10px 10px;
+}
+
+.gallerycontainer .gallerybox .galleryboxtitle {
+  text-align: center;
+}
+
+.gallerycontainer .gallerybox .galleryimg {
+  border: 1px solid #ccc;
+  transition: transform .3s;
+}
+
+.gallerycontainer .gallerybox .galleryimg:hover {
+  border: 1px solid #777;
+  transform: scale(0.95);
+}
+
+.gallerycontainer .gallerybox .galleryimg img {
+  width: 100%;
+  height: auto;
+}
+
+.gallerycontainer .gallerybox .galleryimg .gallerydesc {
+  padding: 10px;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.gallerycontainer .gallerybox .galleryimg iframe {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .gallerybox {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallerybox {
+    width: 100%;
+  }
+}
