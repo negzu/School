@@ -465,7 +465,7 @@ footer b {
 /*-----------------------------*/
 .about-hero {
   margin-top: 160px;
-  background-image: url(/media/about-hero.jpg);
+  background-image: url(../media/about-hero.jpg);
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -482,7 +482,7 @@ footer b {
 /*-----------------------------*/
 .programs-hero {
   margin-top: 160px;
-  background: linear-gradient(0deg, rgba(8, 1, 39, 0.452), rgba(255, 177, 8, 0)), url(../School/media/programs-hero.jpg);
+  background: linear-gradient(0deg, rgba(8, 1, 39, 0.452), rgba(255, 177, 8, 0)), url(../media/programs-hero.jpg);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -599,7 +599,7 @@ footer b {
 /*           Gallery            */
 /*-----------------------------*/
 .gallery-hero {
-  background-image: url(/media/gallery-hero.jpg);
+  background-image: url(../media/gallery-hero.jpg);
   background-size: cover;
   background-position: center;
   height: 550px;
