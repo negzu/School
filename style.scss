@@ -482,7 +482,7 @@ footer {
 
 .programs-hero {
   margin-top:160px;
-  background: linear-gradient(0deg, rgba(8, 1, 39, 0.452), rgba(255, 177, 8, 0)), url(../School/media/programs-hero.jpg); 
+  background-image: url(../School/media/programs-hero.jpg); //linear-gradient(0deg, rgba(8, 1, 39, 0.452), rgba(255, 177, 8, 0)),  
       background-size: cover;
       background-position: bottom;
       background-repeat: no-repeat;
