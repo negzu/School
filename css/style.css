@@ -550,7 +550,7 @@ footer b {
 }
 
 .offers .acad {
-  background: linear-gradient(0deg, rgba(103, 132, 211, 0.9), rgba(103, 132, 211, 0.9)), url(/media/acad.png);
+  background: linear-gradient(0deg, rgba(103, 132, 211, 0.9), rgba(103, 132, 211, 0.9)), url(../media/acad.png);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -575,7 +575,7 @@ footer b {
 }
 
 .offers .tech {
-  background: linear-gradient(0deg, rgba(2, 35, 128, 0.9), rgba(2, 35, 128, 0.9)), url(/media/tech.png);
+  background: linear-gradient(0deg, rgba(2, 35, 128, 0.9), rgba(2, 35, 128, 0.9)), url(../media/tech.png);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
